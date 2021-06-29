@@ -1,0 +1,35 @@
+<%- include ("header")-%>
+<nav class="navbar">
+    <img src="/css/to-do-list.png" alt="todo">
+    <h2>todoList</h2>
+</nav>
+<div class="main_data">
+    <div class="text_card">
+<h1>Manage your task</h1>
+<form class="textinput" action="/" method="post">
+<input type="text" name="task" placeholder="enter your task">
+<button class="add-btn" type="submit">+</button>
+</form>
+<div class="cards-list">
+
+ 
+<div class="card 1">
+  <div class="card_title1 ">
+    <h2>TODAY</h2>
+    <% for(var i=0;i<newListItem.length;i++){%>
+  
+      <form action="/" method="POST">
+    <ul>
+        <li><span><%=newListItem[i]%></span></li>
+    </ul>
+  </form>
+  <%}%>
+  </div>
+</div>
+
+</div>
+
+</div>
+    <img src="/css/todolist1.png" alt="todo">
+        </div>
+
